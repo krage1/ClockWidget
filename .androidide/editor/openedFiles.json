@@ -1,0 +1,35 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/ClockWidget/app/src/main/java/ru/krage/clockwidget/ClockWidget.java",
+      "selection": {
+        "end": {
+          "column": 48,
+          "index": 5928,
+          "line": 136
+        },
+        "start": {
+          "column": 48,
+          "index": 5928,
+          "line": 136
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/ClockWidget/app/src/main/java/ru/krage/clockwidget/ConfigActivity.java",
+      "selection": {
+        "end": {
+          "column": 14,
+          "index": 7646,
+          "line": 176
+        },
+        "start": {
+          "column": 14,
+          "index": 7646,
+          "line": 176
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/ClockWidget/app/src/main/java/ru/krage/clockwidget/ClockWidget.java"
+}

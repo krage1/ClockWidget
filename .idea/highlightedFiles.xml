@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTreeColorHighlighter">
+    <files>
+      <node color="1" path="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <node color="2" path="$PROJECT_DIR$/app/src/main/java/ru/krage/clockwidget" />
+      <node color="3" path="$PROJECT_DIR$/app/src/main/res/anim" />
+      <node color="4" path="$PROJECT_DIR$/app/src/main/res/color" />
+      <node color="5" path="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <node color="5" path="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
+      <node color="5" path="$PROJECT_DIR$/app/src/main/res/drawable-mdpi" />
+      <node color="5" path="$PROJECT_DIR$/app/src/main/res/drawable-nodpi" />
+      <node color="5" path="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
+      <node color="5" path="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
+      <node color="6" path="$PROJECT_DIR$/app/src/main/res/layout" />
+      <node color="6" path="$PROJECT_DIR$/app/src/main/res/layout-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-de" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-de-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-es" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-es-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-fr" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-fr-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-it" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-it-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-night" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-night-v31" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-ru" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-ru-land" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-v23" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-v31" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-w600dp" />
+      <node color="7" path="$PROJECT_DIR$/app/src/main/res/values-w1240dp" />
+      <node color="8" path="$PROJECT_DIR$/app/src/main/res/xml" />
+    </files>
+    <colors>
+      <color id="1" value="#4f060d" name="Color 1" enabled="true" />
+      <color id="2" value="#44220e" name="Color 2" enabled="true" />
+      <color id="3" value="#3f371b" name="Color 3" enabled="true" />
+      <color id="4" value="#162c16" name="Color 4" enabled="true" />
+      <color id="5" value="#0f2f47" name="Color 5" enabled="true" />
+      <color id="6" value="#171a34" name="Color 6" enabled="true" />
+      <color id="7" value="#311333" name="Color 7" enabled="true" />
+      <color id="8" value="#1e1e1e" name="Color 8" enabled="true" />
+    </colors>
+    <option name="marksForCollapsedHighlights" value="Dots" />
+  </component>
+</project>

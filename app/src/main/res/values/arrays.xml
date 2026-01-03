@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="imageIDs">
+        <item>@id/im_hour1</item>
+        <item>@id/im_hour2</item>
+        <item>@id/im_minute1</item>
+        <item>@id/im_minute2</item>
+        <item>@id/im_second1</item>
+        <item>@id/im_second2</item>
+        <item>@id/im_day1</item>
+        <item>@id/im_day2</item>
+        <item>@id/im_month1</item>
+        <item>@id/im_month2</item>
+        <item>@id/im_year1</item>
+        <item>@id/im_year2</item>
+        <item>@id/im_year3</item>
+        <item>@id/im_year4</item>
+    </integer-array>
+    <integer-array name="icons">
+        <item>@drawable/img_brownr</item>
+        <item>@drawable/img_violetr</item>
+        <item>@drawable/img_oliver</item>
+        <item>@drawable/img_redr</item>
+        <item>@drawable/img_greenr</item>
+        <item>@drawable/img_bluer</item>
+        <item>@drawable/img_light_greyr</item>
+        <item>@drawable/img_dark_greyr</item>
+        <item>@drawable/img_transparentr</item>
+    </integer-array>
+    <integer-array name="styles">
+        <item>@drawable/style_1</item>
+        <item>@drawable/style_2</item>
+        <item>@drawable/style_3</item>
+        <item>@drawable/style_4</item>
+    </integer-array>
+    <integer-array name="arrow_ids">
+        <item>@drawable/t_b</item>
+        <item>@drawable/tr_bl</item>
+        <item>@drawable/r_l</item>
+        <item>@drawable/br_tl</item>
+        <item>@drawable/b_t</item>
+        <item>@drawable/bl_tr</item>
+        <item>@drawable/l_r</item>
+        <item>@drawable/tl_br</item>
+    </integer-array>
+    <integer-array name="colors">
+        <item>@color/brown</item>
+        <item>@color/violet</item>
+        <item>@color/salad</item>
+        <item>@color/red</item>
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/light_grey</item>
+        <item>@color/dark_grey</item>
+        <item>@color/transparent</item>
+    </integer-array>
+    <integer-array name="img">
+        <item>@drawable/img_brown</item>
+        <item>@drawable/img_violet</item>
+        <item>@drawable/img_olive</item>
+        <item>@drawable/img_red</item>
+        <item>@drawable/img_green</item>
+        <item>@drawable/img_blue</item>
+        <item>@drawable/img_light_grey</item>
+        <item>@drawable/img_dark_grey</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="flags">
+        <item>@drawable/england</item>
+        <item>@drawable/russia</item>
+        <item>@drawable/germany</item>
+        <item>@drawable/france</item>
+        <item>@drawable/spain</item>
+        <item>@drawable/italy</item>
+    </integer-array>
+
+</resources>

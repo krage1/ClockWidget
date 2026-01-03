@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClockWidget</string>
+    <string name="text_button_background">Image de fond</string>
+    <string name="text_button_layout">Style de mise en page</string>
+    <string name="text_button_add">Ajouter un widget</string>
+    <string name="text_button_apply">Appliquer</string>
+    <string name="title_config_activity">Configuration du widget</string>
+    <string name="title_fragment_bakground">Sélectionner l\'image d\'arrière-plan</string>
+    <string name="title_fragment_layout">Sélectionner le style de mise en page</string>
+    <string name="txt_brown">Brun</string>
+    <string name="app_widget_description">Widget d\'information. Contient une montre numérique avec une date complète.</string>
+    <string name="img_widget_description">Ceci est une description du widget d\'image</string>
+    <string name="text_button_language">Langue</string>
+    <string name="update">Mise à jour</string>
+    <string name="russian">Russe</string>
+    <string-array name="background_array">
+        <item>Brun</item>
+        <item>Violet</item>
+        <item>Olive</item>
+        <item>Rouge</item>
+        <item>Vert</item>
+        <item>Bleu</item>
+        <item>Gris clair</item>
+        <item>Gris foncé</item>
+        <item>Transparent</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>English</item>
+        <item>Русский</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="style_array">
+        <item>Style 1:</item>
+        <item>Style 2:</item>
+        <item>Style 3:</item>
+        <item>Style 4:</item>
+    </string-array>
+	<string-array name="orients">
+        <item>TOP_BOTTOM</item>
+        <item>TR_BL</item>
+        <item>RIGHT_LEFT</item>
+        <item>BR_TL</item>
+        <item>BOTTOM_TOP</item>
+        <item>BL_TR</item>
+        <item>LEFT_RIGHT</item>
+        <item>TL_BR</item>
+    </string-array>
+    <string-array name="langs">
+        <item>en</item>
+        <item>ru</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+    <string name="ru">ru</string>
+    <string name="title_fragment_language">Sélectionner la langue</string>
+    <string name="style">Style 1:</string>
+    <string name="red">Red</string>
+    <string name="text_value_red">180</string>
+    <string name="text_value_green">140</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="text_value_blue">40</string>
+    <string name="alpha">Alpha</string>
+    <string name="text_value_alpha">250</string>
+    <string name="gradient">Gradient</string>
+    <string name="solid">Solid</string>
+    <string name="startcolor">StartColor</string>
+    <string name="endcolor">EndColor</string>
+    <string name="stroke">Stroke</string>
+    <string name="toggle">Toggle</string>
+    <string name="cornerradius">CornerRadius</string>
+    <string name="text_value_corner">20</string>
+    <string name="strokewidth">StrokeWidth</string>
+    <string name="text_value_stroke">20</string>
+    <string name="description_image">Espace pour afficher le résultat</string>
+    <string name="user">Arrière-plan de l\'utilisateur</string>
+    <string name="description">Description</string>
+    <string name="valuered">180</string>
+    <string name="valuegreen">140</string>
+    <string name="valueblue">40</string>
+    <string name="valuealpha">250</string>
+    <string name="valuecorner">20</string>
+    <string name="valuestroke">20</string>
+    <string name="centercolor">CenterColor</string>
+    <string name="orientation">Orientation</string>
+    <string name="dialog_battery_message">Pour éviter que les secondes du widget ne s’arrêtent en arrière-plan,
+        laissez l’application fonctionner sans limites de batterie.</string>
+    <string name="dialog_battery_title">Fonctionnement stable de la montre</string>
+    <string name="btn_configure">Régler</string>
+    <string name="btn_later">Plus tard</string>
+    <string name="find_app">Trouvez l’application dans la liste et désactivez l’optimisation</string>
+</resources>

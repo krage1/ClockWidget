@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BetterCommentsSettings">
+    <option name="initialized" value="true" />
+    <option name="tags">
+      <list>
+        <CustomTag>
+          <option name="color" value="#FF2D00" />
+          <option name="type" value="!" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#3498DB" />
+          <option name="type" value="?" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#474747" />
+          <option name="hasStrikethrough" value="true" />
+          <option name="type" value="//" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#FF8C00" />
+          <option name="type" value="@" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#98C379" />
+          <option name="type" value="*" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#00CB00" />
+          <option name="type" value="#" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#C8A073" />
+          <option name="type" value="$" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#FF60D4" />
+          <option name="type" value="%" />
+        </CustomTag>
+        <CustomTag>
+          <option name="color" value="#8C8200" />
+          <option name="type" value="^" />
+        </CustomTag>
+      </list>
+    </option>
+  </component>
+</project>

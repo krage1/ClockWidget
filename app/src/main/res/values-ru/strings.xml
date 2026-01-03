@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClockWidget</string>
+    <string name="text_button_background">Фоновый рисунок</string>
+    <string name="text_button_layout">Стиль макета</string>
+    <string name="text_button_add">Добавить виджет</string>
+    <string name="text_button_apply">Применить</string>
+    <string name="title_config_activity">Конфигурация виджета</string>
+    <string name="title_fragment_bakground">Выбрать фоновый рисунок</string>
+    <string name="title_fragment_layout">Выбрать стиль макета</string>
+    <string name="txt_brown">Коричневый</string>
+    <string name="app_widget_description">Информационный виджет. Содержит цифровые часы с полной датой.</string>
+    <string name="img_widget_description">Это описание рисунков виджетов приложения</string>
+    <string name="text_button_language">Язык</string>
+    <string name="update">Обновить</string>
+    <string name="russian">Русский</string>
+    <string-array name="background_array">
+        <item>Коричневый</item>
+        <item>Фиолетовый</item>
+        <item>Оливковый</item>
+        <item>Красный</item>
+        <item>Зелёный</item>
+        <item>Синий</item>
+        <item>Светло-серый</item>
+        <item>Тёмно-серый</item>
+        <item>Прозрачный</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>English</item>
+        <item>Русский</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="style_array">
+        <item>Стиль 1:</item>
+        <item>Стиль 2:</item>
+        <item>Стиль 3:</item>
+        <item>Стиль 4:</item>
+    </string-array>
+	<string-array name="orients">
+        <item>TOP_BOTTOM</item>
+        <item>TR_BL</item>
+        <item>RIGHT_LEFT</item>
+        <item>BR_TL</item>
+        <item>BOTTOM_TOP</item>
+        <item>BL_TR</item>
+        <item>LEFT_RIGHT</item>
+        <item>TL_BR</item>
+    </string-array>
+    <string-array name="langs">
+        <item>en</item>
+        <item>ru</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+    <string name="ru">ru</string>
+    <string name="title_fragment_language">Выбор языка</string>
+    <string name="style">Стиль 1:</string>
+    <string name="red">Red</string>
+    <string name="text_value_red">180</string>
+    <string name="text_value_green">140</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="text_value_blue">40</string>
+    <string name="alpha">Alpha</string>
+    <string name="text_value_alpha">250</string>
+    <string name="gradient">Gradient</string>
+    <string name="solid">Solid</string>
+    <string name="startcolor">StartColor</string>
+    <string name="endcolor">EndColor</string>
+    <string name="stroke">Stroke</string>
+    <string name="toggle">Toggle</string>
+    <string name="cornerradius">CornerRadius</string>
+    <string name="text_value_corner">20</string>
+    <string name="strokewidth">StrokeWidth</string>
+    <string name="text_value_stroke">20</string>
+    <string name="description_image">Место для отображения результата</string>
+    <string name="user">Рисунок фона пользователя</string>
+    <string name="description">Описание</string>
+    <string name="valuered">180</string>
+    <string name="valuegreen">140</string>
+    <string name="valueblue">40</string>
+    <string name="valuealpha">250</string>
+    <string name="valuecorner">20</string>
+    <string name="valuestroke">20</string>
+    <string name="centercolor">CenterColor</string>
+    <string name="orientation">Orientation</string>
+    <string name="dialog_battery_message">Чтобы секунды на виджете не останавливались в фоновом режиме,
+        разрешите приложению работать без ограничений батареи.</string>
+    <string name="dialog_battery_title">Стабильная работа часов</string>
+    <string name="btn_configure">Настроить</string>
+    <string name="btn_later">Позже</string>
+    <string name="find_app">Найдите приложение в списке и отключите оптимизацию</string>
+</resources>

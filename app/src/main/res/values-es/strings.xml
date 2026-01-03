@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClockWidget</string>
+    <string name="text_button_background">Patrón de fondo</string>
+    <string name="text_button_layout">Estilo de diseño</string>
+    <string name="text_button_add">Agregar widget</string>
+    <string name="text_button_apply">Aplicar</string>
+    <string name="title_config_activity">Configuración de widget</string>
+    <string name="title_fragment_bakground">Seleccionar imagen de fondo</string>
+    <string name="title_fragment_layout">Seleccionar estilo de diseño</string>
+    <string name="txt_brown">Marrón</string>
+    <string name="app_widget_description">Widget de información. Contiene un reloj digital con una fecha completa.</string>
+    <string name="img_widget_description">Esta es una descripción del widget de imagen</string>
+    <string name="text_button_language">Idioma</string>
+    <string name="update">Actualizar</string>
+    <string name="russian">Ruso</string>
+    <string-array name="background_array">
+        <item>Marrón</item>
+        <item>Púrpura</item>
+        <item>Aceituna</item>
+        <item>Rojo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Gris claro</item>
+        <item>Gris oscuro</item>
+        <item>Transparente</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>English</item>
+        <item>Русский</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="style_array">
+        <item>Estilo 1:</item>
+        <item>Estilo 2:</item>
+        <item>Estilo 3:</item>
+        <item>Estilo 4:</item>
+    </string-array>
+	<string-array name="orients">
+        <item>TOP_BOTTOM</item>
+        <item>TR_BL</item>
+        <item>RIGHT_LEFT</item>
+        <item>BR_TL</item>
+        <item>BOTTOM_TOP</item>
+        <item>BL_TR</item>
+        <item>LEFT_RIGHT</item>
+        <item>TL_BR</item>
+    </string-array>
+    <string-array name="langs">
+        <item>en</item>
+        <item>ru</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+    <string name="ru">ru</string>
+    <string name="title_fragment_language">Lenguaje seleccionado</string>
+    <string name="style">Estilo 1:</string>
+    <string name="red">Red</string>
+    <string name="text_value_red">180</string>
+    <string name="text_value_green">140</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="text_value_blue">40</string>
+    <string name="alpha">Alpha</string>
+    <string name="text_value_alpha">250</string>
+    <string name="gradient">Gradient</string>
+    <string name="solid">Solid</string>
+    <string name="startcolor">StartColor</string>
+    <string name="endcolor">EndColor</string>
+    <string name="centercolor">CenterColor</string>
+    <string name="stroke">Stroke</string>
+    <string name="toggle">Toggle</string>
+    <string name="cornerradius">CornerRadius</string>
+    <string name="text_value_corner">20</string>
+    <string name="strokewidth">StrokeWidth</string>
+    <string name="text_value_stroke">20</string>
+    <string name="description_image">Espacio para mostrar el resultado</string>
+    <string name="user">Fondo de usuario</string>
+    <string name="description">Descrizione</string>
+    <string name="valuered">180</string>
+    <string name="valuegreen">140</string>
+    <string name="valueblue">40</string>
+    <string name="valuealpha">250</string>
+    <string name="valuecorner">20</string>
+    <string name="valuestroke">20</string>
+    <string name="orientation">Orientation</string>
+    
+    <string name="dialog_battery_message">Para evitar que los segundos del widget se detengan en segundo plano,
+        permite que la app funcione sin límites de batería.</string>
+    <string name="dialog_battery_title">Funcionamiento estable del reloj</string>
+    <string name="btn_configure">Ajustar</string>
+    <string name="btn_later">Más tarde</string>
+    <string name="find_app">Busca la app en la lista y desactiva la optimización</string>
+</resources>

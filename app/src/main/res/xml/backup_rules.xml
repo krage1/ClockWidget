@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="database" path="androidx.work.workdb" />
+    <exclude domain="database" path="androidx.work.workdb-shm" />
+    <exclude domain="database" path="androidx.work.workdb-wal" />
+</full-backup-content>

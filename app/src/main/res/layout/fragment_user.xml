@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    android:background="@drawable/background_bkg"
+    tools:context=".ConfigActivity">
+    
+    <ImageView
+        android:id="@+id/ivSpaceView"
+        android:layout_width="260dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:contentDescription="@string/description"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/tvHexValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:src="@color/white" />
+
+    <TextView
+        android:id="@+id/tvHexValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:background="@drawable/user_hexvalue_bkg"
+        android:letterSpacing="0.1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSpaceView"
+        tools:text="#ffeeddcc" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHexValue"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_RedView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvRedName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/sbRed"
+                    android:layout_weight="1"
+                    android:text="@string/red"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvRedValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="@string/valuered" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_RedSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/sbRed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255"
+                    android:progress="180"
+                    android:progressDrawable="@drawable/seekbar_red"
+                    android:thumb="@drawable/thumb_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_GreenView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvGreenName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:labelFor="@id/sbGreen"
+                    android:text="@string/green"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGreenValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="@string/valuegreen" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_GreenSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/sbGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255"
+                    android:progress="140"
+                    android:progressDrawable="@drawable/seekbar_green"
+                    android:thumb="@drawable/thumb_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_BlueView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBlueName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:labelFor="@id/sbBlue"
+                    android:text="@string/blue"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvBlueValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="@string/valueblue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_BlueSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/sbBlue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255"
+                    android:progress="40"
+                    android:progressDrawable="@drawable/seekbar_blue"
+                    android:thumb="@drawable/thumb_selector" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_AlphaView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvAlphaName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:labelFor="@id/sbAlpha"
+                    android:text="@string/alpha"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAlphaValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="@string/valuealpha" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_AlphaSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/sbAlpha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255"
+                    android:progress="250"
+                    android:progressDrawable="@drawable/seekbar_alpha"
+                    android:thumb="@drawable/thumb_selector"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_RadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rgGradientSolid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbGradient"
+                        style="@style/UserRadioButton"
+                        android:text="@string/gradient"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+                    <RadioButton
+                        android:id="@+id/rbSolid"
+                        style="@style/UserRadioButton"
+                        android:checked="true"
+                        android:text="@string/solid"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rgStartCenterEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbStartColor"
+                        style="@style/UserRadioButton"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:text="@string/startcolor"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+                    <RadioButton
+                        android:id="@+id/rbCenterColor"
+                        style="@style/UserRadioButton"
+                        android:enabled="false"
+                        android:text="@string/centercolor"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+                    <RadioButton
+                        android:id="@+id/rbEndColor"
+                        style="@style/UserRadioButton"
+                        android:enabled="false"
+                        android:text="@string/endcolor"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rgStrokeToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbStroke"
+                        style="@style/UserRadioButton"
+                        android:text="@string/stroke"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+
+                    <RadioButton
+                        android:id="@+id/rbToggle"
+                        style="@style/UserRadioButton"
+                        android:checked="true"
+                        android:text="@string/toggle"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintButtonSize" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_CornerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCornerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cornerradius"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCornerValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="@string/valuecorner" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_CornerSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+                <SeekBar
+                    android:id="@+id/sbCornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="80"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/seekbar_corner"
+                    android:thumb="@drawable/thumb_selector"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_StrokeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStrokeName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/strokewidth"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvStrokeValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="@string/valuestroke"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_StrokeSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/sbStrokeWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="40"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/seekbar_corner"
+                    android:thumb="@drawable/thumb_selector"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="6dp"
+                android:labelFor="@id/spSpinner"
+                android:text="@string/orientation"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                tools:ignore="TextContrastCheck" />
+
+            <LinearLayout
+                android:id="@+id/ll_Control"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginHorizontal="30dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinner_background"
+                    android:orientation="vertical"
+                    android:popupBackground="@drawable/spinner_background"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:listitem="@layout/spinner_row" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAcceptUser"
+                    style="@style/ButtonAddStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="@string/text_button_apply"
+                    tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

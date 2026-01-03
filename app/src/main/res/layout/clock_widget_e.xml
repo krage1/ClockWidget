@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="280dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/img_widget_description"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:id="@+id/im_hour1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:src="@drawable/hour_0" />
+            
+            <ImageView
+                android:id="@+id/im_hour2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/hour_1" />
+            
+            <ImageView
+                android:id="@+id/im_doubleDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/double_dot" />
+            
+            <ImageView
+                android:id="@+id/im_minute1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/hour_2" />
+            
+            <ImageView
+                android:id="@+id/im_minute2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:src="@drawable/hour_3" />
+
+            <ImageView
+                android:id="@+id/im_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/dot" />
+            
+            <ImageView
+                android:id="@+id/im_second1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/sec_4" />
+
+            <ImageView
+                android:id="@+id/im_second2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:src="@drawable/sec_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_dayWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:src="@drawable/week_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:id="@+id/im_year1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/date_2" />
+            
+            <ImageView
+                android:id="@+id/im_year2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/date_0" />
+            
+            <ImageView
+                android:id="@+id/im_year3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/date_2" />
+            
+            <ImageView
+                android:id="@+id/im_year4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/date_4" />
+            
+            <ImageView
+                android:id="@+id/im_dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/dot" />
+            
+            <ImageView
+                android:id="@+id/im_month1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/date_1" />
+            
+            <ImageView
+                android:id="@+id/im_month2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/date_0" />
+
+            <ImageView
+                android:id="@+id/im_dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/dot" />
+            
+            <ImageView
+                android:id="@+id/im_day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/date_1" />
+            
+            <ImageView
+                android:id="@+id/im_day2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:contentDescription="@string/img_widget_description"
+                android:scaleType="fitXY"
+                tools:srcCompat="@drawable/date_2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

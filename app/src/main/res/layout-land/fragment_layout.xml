@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_layout"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    tools:context=".ContainerActivity">
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLayout"
+        style="@style/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_fragment_layout"
+        app:layout_constraintBottom_toTopOf="@+id/btnAcceptLayout"
+        app:layout_constraintEnd_toEndOf="@+id/btnAcceptLayout"
+        app:layout_constraintStart_toStartOf="@+id/btnAcceptLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintOverlap,TextContrastCheck">
+    </androidx.appcompat.widget.AppCompatTextView>
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="276dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/layout_row" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAcceptLayout"
+        style="@style/ButtonAddStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLayout"
+        tools:ignore="TextContrastCheck">
+    </androidx.appcompat.widget.AppCompatButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "611740334475",
+    "project_id": "debug-db9bc95a",
+    "storage_bucket": "debug-db9bc95a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611740334475:android:2a03b34399404f3764978e",
+        "android_client_info": {
+          "package_name": "ru.krage.clockwidget.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC6A3rAvmIk8i0BcZtyZfPGm4-HS5-XxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

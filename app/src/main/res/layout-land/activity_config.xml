@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_config"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    tools:context=".ConfigActivity">
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_layout"
+        style="@style/ButtonNormalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_layout"
+        app:layout_constraintBottom_toTopOf="@+id/btn_background"
+        app:layout_constraintEnd_toEndOf="@+id/btn_background"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_background"
+        style="@style/ButtonNormalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_background"
+        app:layout_constraintBottom_toTopOf="@+id/btn_user"
+        app:layout_constraintEnd_toEndOf="@+id/btn_user"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_user"
+        app:layout_constraintTop_toBottomOf="@+id/btn_layout"
+        app:layout_constraintVertical_bias="0.39999998" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user"
+        style="@style/ButtonNormalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user"
+        app:layout_constraintBottom_toTopOf="@+id/btn_lang"
+        app:layout_constraintEnd_toEndOf="@+id/btn_lang"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_lang"
+        app:layout_constraintTop_toBottomOf="@+id/btn_background"
+        app:layout_constraintVertical_bias="0.66999996" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lang"
+        style="@style/ButtonNormalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_language"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_user"
+        app:layout_constraintVertical_bias="0.953"
+        tools:ignore="TextContrastCheck" />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add"
+        style="@style/ButtonAddStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2"
+        tools:ignore="TextContrastCheck" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        style="@style/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_config_activity"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add"
+        app:layout_constraintStart_toStartOf="@+id/btn_add"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45999998" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03">
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInfoLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:shadowColor="#ff000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="6"
+            android:text=""
+            android:textColor="#CDFF8432"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:text="@string/ru">
+        </androidx.appcompat.widget.AppCompatTextView>
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivInfoFlag"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            tools:src="@drawable/russia">
+        </androidx.appcompat.widget.AppCompatImageView>
+    
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

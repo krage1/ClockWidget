@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">ClockWidget</string>
+    <string name="title_config_activity">Widget configuration</string>
+    <string name="text_button_background">Background image</string>
+    <string name="text_button_layout">Layout style</string>
+    <string name="text_button_language">Language</string>
+    <string name="text_button_add">Add widget</string>
+    <string name="text_button_apply">Apply</string>
+    <string name="title_fragment_bakground">Select background image</string>
+    <string name="title_fragment_layout">Select layout style</string>
+    <string name="title_fragment_language">Select language</string>
+
+    <string name="txt_brown">Brown</string>
+    <string name="style">Style 1:</string>
+    <string name="app_widget_description">Information widget. Contains a digital watch with a full date.</string>
+    <string name="img_widget_description">This is an image widget description</string>
+    <string name="update">Update</string>
+    <string name="russian">Russian</string>
+    <string name="ru">ru</string>
+    <string-array name="background_array">
+        <item>Brown</item>
+        <item>Purple</item>
+        <item>Olive</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Light gray</item>
+        <item>Dark gray</item>
+        <item>Transparent</item>
+    </string-array>
+    <string-array name="lang_array">
+        <item>English</item>
+        <item>Русский</item>
+        <item>Deutsch</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+    <string-array name="style_array">
+        <item>Style 1:</item>
+        <item>Style 2:</item>
+        <item>Style 3:</item>
+        <item>Style 4:</item>
+    </string-array>
+    <string-array name="orients">
+        <item>TOP_BOTTOM</item>
+        <item>TR_BL</item>
+        <item>RIGHT_LEFT</item>
+        <item>BR_TL</item>
+        <item>BOTTOM_TOP</item>
+        <item>BL_TR</item>
+        <item>LEFT_RIGHT</item>
+        <item>TL_BR</item>
+    </string-array>
+    <string-array name="langs">
+        <item>en</item>
+        <item>ru</item>
+        <item>de</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+    </string-array>
+    <string name="red">Red</string>
+    <string name="text_value_red">180</string>
+    <string name="text_value_green">140</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="text_value_blue">40</string>
+    <string name="alpha">Alpha</string>
+    <string name="text_value_alpha">250</string>
+    <string name="gradient">Gradient</string>
+    <string name="solid">Solid</string>
+    <string name="startcolor">StartColor</string>
+    <string name="endcolor">EndColor</string>
+    <string name="stroke">Stroke</string>
+    <string name="toggle">Toggle</string>
+    <string name="cornerradius">CornerRadius</string>
+    <string name="text_value_corner">20</string>
+    <string name="strokewidth">StrokeWidth</string>
+    <string name="text_value_stroke">20</string>
+    <string name="description_image">Space to display the result</string>
+    <string name="user">User background</string>
+
+    <string name="description">Description</string>
+    <string name="valuered">180</string>
+    <string name="valuegreen">140</string>
+    <string name="valueblue">40</string>
+    <string name="valuealpha">250</string>
+    <string name="valuecorner">20</string>
+    <string name="valuestroke">20</string>
+    <string name="centercolor">CenterColor</string>
+    <string name="orientation">Orientation</string>
+    
+    <string name="dialog_battery_message">To prevent the seconds on the widget from stopping in the background,
+        allow the app to run without battery limits.</string>
+    <string name="dialog_battery_title">Stable operation of the watch</string>
+    <string name="btn_configure">Configure</string>
+    <string name="btn_later">Later</string>
+    <string name="find_app">Find the app in the list and turn off optimization</string>
+
+</resources>
