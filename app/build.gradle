@@ -9,6 +9,21 @@ android {
             storePassword '27021960'
             keyAlias 'key_for_apps'
             keyPassword '27021960'
+
+            // Пытаемся получить значения из переменных окружения (GitHub Actions)
+            def keystoreFile = System.getenv("ANDROID_KEYSTORE_FILE")
+            def keystorePassword = System.getenv("KEYSTORE_PASSWORD")
+            def keyAlias = System.getenv("KEY_ALIAS")
+            def keyPassword = System.getenv("KEY_PASSWORD")
+
+            // Логика: если переменных нет (мы локально), ничего не делаем или берем из local.properties.
+            // Если мы на CI, используем полученные пути.
+            if (keystoreFile != null && keystorePassword != null) {
+                storeFile file(keystoreFile)
+                storePassword keystorePassword
+                keyAlias keyAlias
+                keyPassword keyPassword
+            }
         }
     }
     namespace =  'ru.krage.clockwidget'
@@ -31,6 +46,14 @@ android {
     buildTypes {
         release {
             signingConfig = signingConfigs.release
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            // Важно: применяем конфигурацию подписи только если она валидна
+            if (System.getenv("ANDROID_KEYSTORE_FILE") != null) {
+                signingConfig signingConfigs.release
+            }
         }
         debug {
             debuggable true
@@ -57,7 +80,9 @@ dependencies {
     implementation 'androidx.fragment:fragment:1.8.9'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    //noinspection GradleDependency
     implementation 'androidx.lifecycle:lifecycle-viewmodel-android:2.9.4'
+    //noinspection GradleDependency
     implementation 'androidx.work:work-runtime:2.8.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.3.0'

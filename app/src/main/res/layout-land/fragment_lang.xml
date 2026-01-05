@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="@+id/btnAcceptLang"
         app:layout_constraintStart_toStartOf="@+id/btnAcceptLang"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="VisualLintOverlap,TextContrastCheck"></androidx.appcompat.widget.AppCompatTextView>
+        tools:ignore="VisualLintOverlap,TextContrastCheck">
+    </androidx.appcompat.widget.AppCompatTextView>
     
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRecyclerView"
@@ -44,6 +45,7 @@
         app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvLang"
-        tools:ignore="TextContrastCheck"></androidx.appcompat.widget.AppCompatButton>
+        tools:ignore="TextContrastCheck">
+    </androidx.appcompat.widget.AppCompatButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
