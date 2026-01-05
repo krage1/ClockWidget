@@ -16,6 +16,6 @@ ClockWidget is an Android app for creating and customizing a custom clock widget
 1.Install the app on your device. 2.Add the "ClockWidget" widget to your desktop. 3.In the configuration window (ConfigActivity) that opens: •Select the desired clock layout. •Customize the background (preset or custom). •Select the display language of the date/time. •If prompted, allow running in the background (disable battery optimization). 4.Click the "Add" button (or "Update" if the widget already exists).
 
 # 🔧 Requirements
-•Android SDK 21+ (support for modern features up to Android 13+ via AndroidX)\n •Android Studio Iguana (or later). •Gradle 8.0+
+•Android SDK 21+ (support for modern features up to Android 13+ via AndroidX)@ •Android Studio Iguana (or later). •Gradle 8.0+
 
 Developed as part of the ClockWidget project.
