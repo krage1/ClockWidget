@@ -1,6 +1,7 @@
 # ClockWidget
 ClockWidget is an Android app for creating and customizing a custom clock widget. 
-The app allows users to flexibly customize the widget's appearance, including layouts, backgrounds, and localization, while ensuring that background updates run smoothly.
+The app allows users to flexibly customize the widget's appearance, including layouts, 
+  backgrounds, and localization, while ensuring that background updates run smoothly.
 
 # 📋 Features
 •Flexible Customization: Select different layouts and background images for the widget. 
@@ -28,8 +29,10 @@ The app allows users to flexibly customize the widget's appearance, including la
 
 # 📂 Project structure (main components)
 •ConfigActivity.java: The main screen of the widget settings. Controls parameter selection and widget. 
-•ConfigViewModel.java initialization: Configuration data processing logic, system language detection, and button state management. 
-•BatteryOptimizationHelper / BatteryDialogFragment: A system for notifying the user to exclude the application from power saving modes for the correct operation of the clock. 
+•ConfigViewModel.java initialization: Configuration data processing logic, system language detection, 
+  and button state management. 
+•BatteryOptimizationHelper / BatteryDialogFragment: A system for notifying the user to exclude the 
+  application from power saving modes for the correct operation of the clock. 
 •ClockWidget.java: Widget provider class responsible for updating it and rendering. 
 •ContainerActivity.java: Helper activity for selection of specific parameters (layouts, languages).
 
