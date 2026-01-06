@@ -28,7 +28,7 @@
             tools:ignore="ImageContrastCheck"
             tools:src="@drawable/check_off">
         </androidx.appcompat.widget.AppCompatImageView>
-
+        
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvLayout"
             android:layout_width="100dp"
@@ -44,7 +44,7 @@
             android:textColor="#bb008cff"
             android:textSize="22sp"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck"
+            tools:ignore="TextContrastCheck,TextSizeCheck"
             tools:text="@string/style">
         </androidx.appcompat.widget.AppCompatTextView>
 
