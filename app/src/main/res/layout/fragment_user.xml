@@ -427,48 +427,51 @@
                     android:progressDrawable="@drawable/seekbar_corner"
                     android:thumb="@drawable/thumb_selector"/>
             </LinearLayout>
-
-            <TextView
+            
+            <RelativeLayout
+                android:id="@+id/rlControl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="6dp"
-                android:labelFor="@id/spSpinner"
-                android:text="@string/orientation"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:textStyle="italic"
-                tools:ignore="TextContrastCheck" />
-
-            <LinearLayout
-                android:id="@+id/ll_Control"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
-
+                
+                <TextView
+                    android:id="@+id/tvTitleOrientation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:labelFor="@id/spSpinner"
+                    android:text="@string/orientation"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    tools:ignore="TextContrastCheck" />
+                
                 <androidx.appcompat.widget.AppCompatSpinner
                     android:id="@+id/spSpinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
+                    android:layout_below="@id/tvTitleOrientation"
                     android:background="@drawable/spinner_background"
                     android:orientation="vertical"
                     android:popupBackground="@drawable/spinner_background"
                     android:spinnerMode="dropdown"
                     tools:ignore="TouchTargetSizeCheck"
                     tools:listitem="@layout/spinner_row" />
-
+                
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnAcceptUser"
                     style="@style/ButtonAddStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0"
+                    android:layout_toEndOf="@id/spSpinner"
+                    android:layout_alignBottom="@id/spSpinner"
+                    android:layout_marginStart="40dp"
                     android:text="@string/text_button_apply"
                     tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
-            </LinearLayout>
+            
+            </RelativeLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

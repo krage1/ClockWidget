@@ -4,7 +4,7 @@
     android:configure="ru.krage.clockwidget.ConfigActivity"
     android:widgetFeatures="reconfigurable"
     android:initialLayout="@layout/clock_widget"
-    android:minWidth="220dp"
+    android:minWidth="240dp"
     android:minHeight="100dp"
     android:previewImage="@drawable/preview_widget"
     android:resizeMode="horizontal|vertical"
