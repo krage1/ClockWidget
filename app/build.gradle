@@ -5,10 +5,6 @@ plugins {
 android {
     signingConfigs {
         release {
-            storeFile file('D:\\Android\\Sign\\clockwidget_key_store.jks')
-            storePassword '27021960'
-            keyAlias 'key_for_apps'
-            keyPassword '27021960'
         }
     }
     namespace =  'ru.krage.clockwidget'
