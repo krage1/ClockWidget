@@ -95,6 +95,30 @@ android {
     lint {
         baseline = file("lint-baseline.xml")
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+
+            // 1. Получаем имя проекта (или задайте жестко строкой, например "MyCoolApp")
+            def appName = 'ClockWidget'
+
+            // 2. Получаем версию (она подтянется из defaultConfig, который берет из файла)
+            def version = variant.versionName
+
+            // 3. (Опционально) Добавляем дату сборки для точности
+            def date = new Date().format("yyyy-MM-dd")
+
+            // 4. Формируем новое имя
+            // Результат будет: MyProject-v1.2.4-release.apk
+            //def newFileName = "${appName}-v${version}-${variant.buildType.name}.apk"
+
+            // Если хотите добавить дату:
+            def newFileName = "${appName}-v${version}-${date}-${variant.buildType.name}.apk"
+
+            // 5. Присваиваем новое имя выходному файлу
+            outputFileName = newFileName
+        }
+    }
 }
 
 dependencies {
