@@ -76,9 +76,17 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.release
-            minifyEnabled false
+            // 1. Включаем сокращение кода (Code Shrinking) и обфускацию
+            minifyEnabled true
+            // 2. Включаем удаление неиспользуемых ресурсов (картинок, layout-ов)
+            // Работает только в паре с minifyEnabled true
+            shrinkResources true
+            // 3. Указываем файлы правил
+            // getDefaultProguardFile — стандартные правила от Google (Android SDK)
+            // 'proguard-rules.pro' — наш файл для кастомных правил
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // (Опционально) Если вы настроили подпись и имя файла ранее, они будут здесь
+            signingConfig = signingConfigs.release
         }
         debug {
             debuggable true
