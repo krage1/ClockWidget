@@ -2,23 +2,56 @@ plugins {
     id 'com.android.application'
 }
 
+// 1. Загружаем файл свойств
+def versionPropsFile = file('version.properties')
+def versionProps = new Properties()
+
+// Если файла нет, создаем дефолтные значения (защита от ошибок)
+if (versionPropsFile.canRead()) {
+    versionProps.load(new FileInputStream(versionPropsFile))
+} else {
+    versionProps['VERSION_CODE'] = '1'
+    versionProps['VERSION_NAME_MAJOR'] = '1'
+    versionProps['VERSION_NAME_MINOR'] = '0'
+    versionProps['VERSION_NAME_PATCH'] = '0'
+}
+// 2. Задача для автоматического поднятия версии (Patch)
+// Запускать эту задачу НУЖНО перед релизом
+tasks.register('bumpVersion') {
+    doLast {
+        // Читаем текущие значения
+        def code = versionProps['VERSION_CODE'].toInteger() + 1
+        def patch = versionProps['VERSION_NAME_PATCH'].toInteger() + 1
+
+        // Записываем новые значения в память
+        versionProps['VERSION_CODE'] = code.toString()
+        versionProps['VERSION_NAME_PATCH'] = patch.toString()
+
+        // Сохраняем в файл
+        versionProps.store(versionPropsFile.newWriter(), null)
+
+        println("-------------------------------------------------------")
+        println("  Version bumped to: ${versionProps['VERSION_NAME_MAJOR']}.${versionProps['VERSION_NAME_MINOR']}.${patch}")
+        println("  New VersionCode: ${code}")
+        println("-------------------------------------------------------")
+    }
+}
+
+def keystorePropertiesFile = rootProject.file("key.properties")
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
     signingConfigs {
         release {
 
-            // Пытаемся получить значения из переменных окружения (GitHub Actions)
-            def keystoreFile = System.getenv("ANDROID_KEYSTORE_FILE")
-            def keystorePassword = System.getenv("KEYSTORE_PASSWORD")
-            def keyAlias = System.getenv("KEY_ALIAS")
-            def keyPassword = System.getenv("KEY_PASSWORD")
-
-            // Логика: если переменных нет (мы локально), ничего не делаем или берем из local.properties.
-            // Если мы на CI, используем полученные пути.
-            if (keystoreFile != null && keystorePassword != null) {
-                storeFile file(keystoreFile)
-                storePassword keystorePassword
-                keyAlias keyAlias
-                keyPassword keyPassword
+            if (keystorePropertiesFile.exists()) {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
             }
         }
     }
@@ -33,23 +66,27 @@ android {
         resourceConfigurations += ["en", "ru", "de", "fr", "es", "it"]
         //noinspection OldTargetApi
         targetSdkVersion 34
-        versionCode 1
-        versionName '1.3.9'
+
+        // ВАЖНО: Берем значения из загруженных свойств
+        versionCode versionProps['VERSION_CODE'].toInteger()
+        versionName "${versionProps['VERSION_NAME_MAJOR']}.${versionProps['VERSION_NAME_MINOR']}.${versionProps['VERSION_NAME_PATCH']}"
 
         signingConfig = signingConfigs.debug
     }
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.release
-
-            minifyEnabled false
+            // 1. Включаем сокращение кода (Code Shrinking) и обфускацию
+            minifyEnabled true
+            // 2. Включаем удаление неиспользуемых ресурсов (картинок, layout-ов)
+            // Работает только в паре с minifyEnabled true
+            shrinkResources true
+            // 3. Указываем файлы правил
+            // getDefaultProguardFile — стандартные правила от Google (Android SDK)
+            // 'proguard-rules.pro' — наш файл для кастомных правил
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-
-            // Важно: применяем конфигурацию подписи только если она валидна
-            if (System.getenv("ANDROID_KEYSTORE_FILE") != null) {
-                signingConfig signingConfigs.release
-            }
+            // (Опционально) Если вы настроили подпись и имя файла ранее, они будут здесь
+            signingConfig = signingConfigs.release
         }
         debug {
             debuggable true
@@ -65,6 +102,30 @@ android {
     }
     lint {
         baseline = file("lint-baseline.xml")
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+
+            // 1. Получаем имя проекта (или задайте жестко строкой, например "MyCoolApp")
+            def appName = 'ClockWidget'
+
+            // 2. Получаем версию (она подтянется из defaultConfig, который берет из файла)
+            def version = variant.versionName
+
+            // 3. (Опционально) Добавляем дату сборки для точности
+            def date = new Date().format("yyyy-MM-dd")
+
+            // 4. Формируем новое имя
+            // Результат будет: MyProject-v1.2.4-release.apk
+            //def newFileName = "${appName}-v${version}-${variant.buildType.name}.apk"
+
+            // Если хотите добавить дату:
+            def newFileName = "${appName}-v${version}-${date}-${variant.buildType.name}.apk"
+
+            // 5. Присваиваем новое имя выходному файлу
+            outputFileName = newFileName
+        }
     }
 }
 
